@@ -1,0 +1,85 @@
+:root {
+  /* Font family */
+  --ff: "karla", sans-serif;
+  /* Font size */
+  --fs-sm: 1.6rem;
+  --fs-md: 2rem;
+  --fs-lg: 4rem;
+  /* Font weight */
+  --fw-extra-bold: 800;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  /* Colors */
+  --color-primary: #4adf86;
+  --color-secondary: #10b981;
+}
+
+html {
+  /* Sets root font-size to 10px (62.5% of browser default 16px)
+     This makes rem units easier to work with:
+     1rem = 10px
+     1.6rem = 16px
+     2rem = 20px */
+  font-size: 62.5%;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
