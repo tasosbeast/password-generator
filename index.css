@@ -1,2 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #1c1c1c;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
 .container {
+  width: 100%;
+  max-width: 550px;
+  background-color: #1f2937;
+  padding: 115px 52px;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -2.5%;
+  color: white;
+}
+
+h1 span {
+  color: #4adf86;
+}
+
+h2 {
+  color: #d5d4d8;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 51px;
+}
+
+button {
+  padding: 9px 17px;
+  background-color: #10b981;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #059669;
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #2f3e53;
+  margin: 35px 0;
+}
+
+.password-container {
+  display: flex;
+  gap: 24px;
+}
+
+.password-container div {
+  height: 39px;
+  width: 211px;
+  background-color: #273549;
+  border-radius: 6px;
+  color: #55f991;
 }
