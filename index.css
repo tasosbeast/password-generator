@@ -82,4 +82,6 @@ button:active {
   background-color: #273549;
   border-radius: 6px;
   color: #55f991;
+  text-align: center;
+  padding: 10px 14px;
 }
