@@ -19,7 +19,22 @@
         <span>random password</span>
       </h1>
       <h2>Never use an insecure password again.</h2>
-      <button id="btn">Generate passwords</button>
+      <div class="inputs">
+        <button id="btn">Generate passwords</button>
+        <div class="range-container">
+          <label for="password-length"
+            >Password length: <span id="length-value">15</span></label
+          >
+          <input
+            type="range"
+            id="password-length"
+            min="4"
+            max="30"
+            value="15"
+          />
+        </div>
+      </div>
+
       <div class="hr"></div>
       <div class="password-container">
         <div>

@@ -85,3 +85,17 @@ button:active {
   text-align: center;
   padding: 10px 14px;
 }
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range-container {
+  width: 200px;
+  border-radius: 6px;
+  background-color: #10b981;
+  color: white;
+  padding: 6px 14px;
+}

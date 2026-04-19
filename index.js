@@ -95,13 +95,19 @@ const characters = [
 let btnEL = document.getElementById("btn");
 let password1El = document.getElementById("password1");
 let password2El = document.getElementById("password2");
+const passwordLengthEl = document.getElementById("password-length");
+const lengthValueEl = document.getElementById("length-value");
+
+passwordLengthEl.addEventListener("input", function () {
+  lengthValueEl.textContent = passwordLengthEl.value;
+});
 
 btnEL.addEventListener("click", function () {
   let randomIndex1;
   let randomIndex2;
   let password1 = "";
   let password2 = "";
-  for (let i = 1; i <= 15; i++) {
+  for (let i = 1; i <= Number(passwordLengthEl.value); i++) {
     randomIndex1 = Math.floor(Math.random() * characters.length);
     randomIndex2 = Math.floor(Math.random() * characters.length);
     password1 += characters[randomIndex1];
