@@ -98,6 +98,7 @@ let password2El = document.getElementById("password2");
 const passwordLengthEl = document.getElementById("password-length");
 const lengthValueEl = document.getElementById("length-value");
 
+//Event Listeners
 passwordLengthEl.addEventListener("input", function () {
   lengthValueEl.textContent = passwordLengthEl.value;
 });
@@ -116,3 +117,12 @@ btnEL.addEventListener("click", function () {
   password1El.textContent = password1;
   password2El.textContent = password2;
 });
+
+password1El.addEventListener("click", () => copyText(password1El));
+password2El.addEventListener("click", () => copyText(password2El));
+
+// Functions
+function copyText(el) {
+  navigator.clipboard.writeText(el.innerText);
+  alert(`${el.innerText} Copied to your clipboard`);
+}
