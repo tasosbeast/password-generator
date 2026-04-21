@@ -76,7 +76,7 @@ button:active {
   gap: 24px;
 }
 
-.password-container div {
+.password-container button {
   height: 39px;
   width: 211px;
   background-color: #273549;
